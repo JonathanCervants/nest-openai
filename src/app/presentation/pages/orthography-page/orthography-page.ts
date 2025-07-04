@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { AssistantPage } from '../assistant-page/assistant-page';
 
 @Component({
   selector: 'app-orthography-page',

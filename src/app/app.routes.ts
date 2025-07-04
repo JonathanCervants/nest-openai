@@ -1,17 +1,23 @@
 import { Routes } from '@angular/router';
-
+import { DashboardLayout } from './presentation/layouts/dashboard-layout/dashboard-layout';
+DashboardLayout
 export const routes: Routes = [
     {
          path: '',
-         component: DashboardLayoutComponent,
+         component: DashboardLayout,
          children:[
             {
                 path: 'ortography',
                 loadComponent:() =>
                     import(
-                        './presentation/pages/orthographyPage/orthographyPage.component'
-                    )
-            }
+                        './presentation/pages/orthography-page/orthography-page'
+                    ),
+                data:{
+                    icon:'fa-solid fa-spell-check',
+                    title: 'Ortografía',
+                    description: 'Corregir Ortografía'
+                }
+            },
          ]
     }
 ];
