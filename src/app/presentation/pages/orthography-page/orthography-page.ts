@@ -1,9 +1,11 @@
 import { Component } from '@angular/core';
-import { AssistantPage } from '../assistant-page/assistant-page';
+import { ChatMessagesComponent } from "../../components/chat-bubbles/chatMessages/chatMessages.component";
+import { MyMessageComponent } from '../../components/chat-bubbles/myMessage/myMessage.component';
 
 @Component({
   selector: 'app-orthography-page',
-  imports: [],
+  imports: [ChatMessagesComponent, 
+    MyMessageComponent],
   templateUrl: './orthography-page.html',
   styleUrl: './orthography-page.css'
 })

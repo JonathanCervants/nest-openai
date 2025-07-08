@@ -1,5 +1,32 @@
-<h1 class="text-5xl font-thin">
-dashboard-layout works!
+<main class="flex flex-row mt-7">
+    <nav class="hidden.sm:flex.flex-col.ml-5.w-[370px].min-h-[calc(100vh-3.0rem)].bg-white.bg-opacity-10.p-5.rounded-3xl">
+        <h1>
+            AngularGPT
+        </h1>
+        <span class="text-xl">Welcome</span>
+        <div class="border-gray-700 border my-3">
+            <!-- Navlinsk -->
+             <!-- @for(route of routes; track route.path){
+                <app-sidebar-menu-item
+                    [description]="route.data!['description]"
+                    [icon]="route.data!['icon]"
+                    [title]="route.data!['title]"
+                    [path]="route.path"
+
+                ></app-sidebar-menu-item>
+             } -->
+        </div>
+    </nav>
+    <section>
+        <div class="flex h-full flex-row">
+            <div class="flex-flex-col flex-auto p-1">
+                <router-outlet></router-outlet>
+            </div>
+        </div>
+    </section>
+</main>
+
+<!-- dashboard-layout works!
 Angular usa zonejs para la deteccion de cambios, but con v20 se esta probando el uso de señales.
 
 Bllas de UI Gates vs Jobs
@@ -10,9 +37,4 @@ ASTD-8254:
 Contratos proveedores: 
  Area usuario
     Sección usuarios adiccionales.
-Affect: Solicitudes cont prov., contratos Prov, nueva soli, detalle solici, notificaciones por correo.
-
-
-</h1>
-<router-outlet></router-outlet>
-
+Affect: Solicitudes cont prov., contratos Prov, nueva soli, detalle solici, notificaciones por correo. -->
